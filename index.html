@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo1.png" alt="College Logo">
+        <h1>College Name</h1>
+        <p>University Affiliation<br>Establishment Year</p>
+        <img src="images/logo2.png" alt="Secondary Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#principle-desk">About</a></li>
+            <li><a href="#societies">Societies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="marquee">
+        <span>IMPORTANT ANNOUNCEMENTS || UPCOMING EVENTS || NEWS</span>
+    </div>
+    <section id="principle-desk">
+        <h2>From the Principal's Desk</h2>
+        <div class="principle-content">
+            <div class="principle-text">
+                <p>Welcome message from the Principal. Brief introduction about the college, its values, and its mission.</p>
+            </div>
+            <div class="principle-image">
+                <img src="images/principal.jpg" alt="Principal's Image">
+            </div>
+        </div>
+    </section>
+    <section id="societies">
+        <h2>Our Societies</h2>
+        <ul>
+            <li>Society 1</li>
+            <li>Society 2</li>
+            <li>Society 3</li>
+            <li>Society 4</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Reach out to us for more information:</p>
+            <ul class="important-numbers">
+                <li>Email: <a href="mailto:info@college.com">info@college.com</a></li>
+                <li>Phone: <a href="tel:+1-234-567-890">+1-234-567-890</a></li>
+                <li>Address: 123 College Street, City, Country</li>
+            </ul>
+        </div>
+        <p><a href="https://maps.google.com">View on Google Maps</a></p>
+    </section>
+    <table>
+        <tr>
+            <th>Department</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Chemistry</td>
+            <td>Study of chemical properties and reactions.</td>
+        </tr>
+        <tr>
+            <td>Commerce</td>
+            <td>Study of business and financial activities.</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>Study of matter, energy, and their interactions.</td>
+        </tr>
+        <tr>
+            <td>Computer Science</td>
+            <td>Study of algorithms, programming, and computer systems.</td>
+        </tr>
+        <tr>
+            <td>Management Studies</td>
+            <td>Study of management principles and practices.</td>
+        </tr>
+    </table>
+    <section id="gallery">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/image1.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/image2.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/image3.jpg" alt="Image 3">
+            </div>
+        </div>
+    </section>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="commerce">Commerce</option>
+                <option value="physics">Physics</option>
+                <option value="cs">Computer Science</option>
+                <option value="management">Management</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; College Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
