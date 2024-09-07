@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Website</title>
+    <title>College Website with Sidebars</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo1.png" alt="College Logo">
+            <img src="images/logo1.png" alt="College Logo" aria-label="College Logo">
         </div>
         <div class="header-text">
             <h1>College Name</h1>
-            <p>University Affiliation<br>Establishment Year</p>
+            <p>Affiliated with University<br>Est. Year</p>
         </div>
         <div class="secondary-logo">
-            <img src="images/logo2.png" alt="Secondary Logo">
+            <img src="images/logo2.png" alt="Secondary Logo" aria-label="Affiliated University Logo">
         </div>
     </header>
 
@@ -33,117 +33,142 @@
         <span>IMPORTANT ANNOUNCEMENTS || UPCOMING EVENTS || NEWS</span>
     </div>
 
-    <main>
-        <section id="principle-desk">
-            <h2>From the Principal's Desk</h2>
-            <div class="principle-content">
-                <div class="principle-text">
-                    <p>Welcome message from the Principal. Brief introduction about the college, its values, and its mission.</p>
-                </div>
-                <div class="principle-image">
-                    <img src="images/principal.jpg" alt="Principal's Image">
-                </div>
-            </div>
-        </section>
-
-        <section id="societies">
-            <h2>Our Societies</h2>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar">
+            <h2>Quick Links</h2>
             <ul>
-                <li>Society 1</li>
-                <li>Society 2</li>
-                <li>Society 3</li>
-                <li>Society 4</li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#societies">Societies</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#registration">Register</a></li>
             </ul>
-        </section>
+        </aside>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-                <p>Reach out to us for more information:</p>
-                <ul class="important-numbers">
-                    <li>Email: <a href="mailto:info@college.com">info@college.com</a></li>
-                    <li>Phone: <a href="tel:+1-234-567-890">+1-234-567-890</a></li>
-                    <li>Address: 123 College Street, City, Country</li>
+        <!-- Main Content -->
+        <main>
+            <section id="principle-desk">
+                <h2>From the Principal's Desk</h2>
+                <div class="principle-content">
+                    <div class="principle-text">
+                        <p>Welcome message from the Principal. Brief introduction about the college, its values, and its mission.</p>
+                    </div>
+                    <div class="principle-image">
+                        <img src="images/principal.jpg" alt="Principal's Image">
+                    </div>
+                </div>
+            </section>
+
+            <section id="societies">
+                <h2>Our Societies</h2>
+                <ul>
+                    <li>Society 1</li>
+                    <li>Society 2</li>
+                    <li>Society 3</li>
+                    <li>Society 4</li>
                 </ul>
-                <p><a href="https://maps.google.com">View on Google Maps</a></p>
-            </div>
-        </section>
+            </section>
 
-        <section id="departments">
-            <h2>Departments</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Department</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Chemistry</td>
-                        <td>Study of chemical properties and reactions.</td>
-                    </tr>
-                    <tr>
-                        <td>Commerce</td>
-                        <td>Study of business and financial activities.</td>
-                    </tr>
-                    <tr>
-                        <td>Physics</td>
-                        <td>Study of matter, energy, and their interactions.</td>
-                    </tr>
-                    <tr>
-                        <td>Computer Science</td>
-                        <td>Study of algorithms, programming, and computer systems.</td>
-                    </tr>
-                    <tr>
-                        <td>Management Studies</td>
-                        <td>Study of management principles and practices.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <p>Reach out to us for more information:</p>
+                    <ul class="important-numbers">
+                        <li>Email: <a href="mailto:info@college.com">info@college.com</a></li>
+                        <li>Phone: <a href="tel:+1-234-567-890">+1-234-567-890</a></li>
+                        <li>Address: 123 College Street, City, Country</li>
+                    </ul>
+                    <p><a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">View on Google Maps</a></p>
+                </div>
+            </section>
 
-        <section id="gallery">
-            <h2>Image Gallery</h2>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="images/image1.jpg" alt="Campus Event 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/image2.jpg" alt="Campus Event 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/image3.jpg" alt="Campus Event 3">
-                </div>
-            </div>
-        </section>
+            <section id="departments">
+                <h2>Departments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>Study of chemical properties and reactions.</td>
+                        </tr>
+                        <tr>
+                            <td>Commerce</td>
+                            <td>Study of business and financial activities.</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>Study of matter, energy, and their interactions.</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Science</td>
+                            <td>Study of algorithms, programming, and computer systems.</td>
+                        </tr>
+                        <tr>
+                            <td>Management Studies</td>
+                            <td>Study of management principles and practices.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-        <section id="registration">
-            <h2>Registration Form</h2>
-            <form action="#" method="post">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-                
-                <label for="department">Department</label>
-                <select id="department" name="department" required>
-                    <option value="" disabled selected>Select Department</option>
-                    <option value="chemistry">Chemistry</option>
-                    <option value="commerce">Commerce</option>
-                    <option value="physics">Physics</option>
-                    <option value="cs">Computer Science</option>
-                    <option value="management">Management</option>
-                </select>
-                
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
+            <section id="gallery">
+                <h2>Image Gallery</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/image1.jpg" alt="Campus Event 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/image2.jpg" alt="Campus Event 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/image3.jpg" alt="Campus Event 3">
+                    </div>
+                </div>
+            </section>
+
+            <section id="registration">
+                <h2>Registration Form</h2>
+                <form action="#" method="post">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="" disabled selected>Select Department</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="physics">Physics</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="management">Management</option>
+                    </select>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Event 1: Science Fair</li>
+                <li>Event 2: Annual Debate Competition</li>
+                <li>Event 3: Sports Meet</li>
+            </ul>
+        </aside>
+    </div>
 
     <footer>
         <p>&copy; <span id="current-year"></span> College Name. All rights reserved.</p>
@@ -154,3 +179,4 @@
     </script>
 </body>
 </html>
+
